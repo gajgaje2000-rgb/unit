@@ -1,0 +1,28 @@
+STEP 1: Create Database
+
+CREATE DATABASE student_db;
+
+STEP 2: Use Database
+
+USE student_db;
+
+STEP 3: Create Table
+
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    salary INT,
+    department VARCHAR(100)
+);
+
+STEP 4: Run Project
+
+1. Put folder in htdocs
+2. Start Apache + MySQL
+3. Open:
+   http://localhost/employee-crud/index.php
+
+IMPORTANT:
+- Change database name in db.php if needed
+- Change table name "employees"
+- Change fields based on question

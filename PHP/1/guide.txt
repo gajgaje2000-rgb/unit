@@ -1,0 +1,27 @@
+STEP 1: Create Database
+
+CREATE DATABASE student_db;
+
+STEP 2: Use Database
+
+USE student_db;
+
+STEP 3: Create Table
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);
+
+STEP 4: Run Project
+
+1. Copy project folder to htdocs (XAMPP)
+2. Start Apache + MySQL
+3. Open browser:
+   http://localhost/student-crud/index.php
+
+IMPORTANT:
+- Change database name in db.php if needed
+- Change table name "students" if your exam question is different
+- Change columns (name, email) based on question
