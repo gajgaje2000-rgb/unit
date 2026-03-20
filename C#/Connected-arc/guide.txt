@@ -1,0 +1,101 @@
+C# Windows Forms – Connected Architecture (ADO.NET)
+UI Design Guide (Toolbox Elements)
+
+---
+
+1. LABELS (3 Required)
+
+---
+
+Drag: Label
+
+Set properties:
+
+* Label1 → Text = "Id"
+* Label2 → Text = "Name"
+* Label3 → Text = "City"
+
+---
+
+2. TEXTBOXES (3 Required)
+
+---
+
+Drag: TextBox
+
+Set (Name property):
+
+* textId
+* textName
+* textCity
+
+---
+
+3. BUTTONS (4 Required)
+
+---
+
+Drag: Button
+
+Set properties:
+
+1. Name = button1
+   Text = Insert
+
+2. Name = button2
+   Text = Update
+
+3. Name = button3
+   Text = Delete
+
+4. Name = button4
+   Text = Select
+
+---
+
+4. DATAGRIDVIEW (1 Required)
+
+---
+
+Drag: DataGridView
+
+Set:
+
+* Name = dataGridView1
+
+---
+
+5. EVENT CONNECTION (IMPORTANT)
+
+---
+
+Double click each button to auto-generate events:
+
+* button1 → button1_Click (Insert)
+* button2 → button2_Click (Update)
+* button3 → button3_Click (Delete)
+* button4 → button4_Click (Select)
+
+---
+
+## FINAL UI STRUCTURE
+
+[Label] Id      → [TextBox: textId]
+[Label] Name    → [TextBox: textName]
+[Label] City    → [TextBox: textCity]
+
+[Insert] [Update] [Delete] [Select]
+
+[DataGridView → dataGridView1]
+
+---
+
+## EXAM TIP
+
+Always remember:
+3 TextBox + 4 Button + 1 DataGridView
+
+Names must match code exactly:
+textId, textName, textCity, dataGridView1
+button1, button2, button3, button4
+----------------------------------
