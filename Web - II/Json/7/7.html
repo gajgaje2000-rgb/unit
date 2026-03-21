@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch JSON</title>
+</head>
+<body>
+
+<h2>Student Data</h2>
+
+<button onclick="loadData()">Load Data</button>
+
+<table border="1" id="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+</table>
+
+<script>
+function loadData() {
+    fetch("7.json")   // fetch external JSON file
+    .then(response => response.json())
+    .then(data => {
+        let table = document.getElementById("table");
+
+        data.forEach(student => {
+            let row = table.insertRow();
+
+            row.insertCell(0).innerHTML = student.id;
+            row.insertCell(1).innerHTML = student.name;
+            row.insertCell(2).innerHTML = student.marks;
+        });
+    });
+}
+</script>
+
+</body>
+</html>

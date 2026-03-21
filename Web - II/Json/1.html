@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Employees</h3>
+<ul id="emp"></ul>
+
+<script>
+let employees = [
+  {id:1, name:"John"},
+  {id:2, name:"Alice"}
+];
+
+let output = "";
+employees.forEach(e => {
+  output += "<li>" + e.id + " - " + e.name + "</li>";
+});
+
+document.getElementById("emp").innerHTML = output;
+</script>
+
+</body>
+</html>

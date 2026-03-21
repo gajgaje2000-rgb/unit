@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Students</h3>
+<ul id="list"></ul>
+
+<script>
+let students = [
+  {name:"Rahul", marks:85},
+  {name:"Sneha", marks:92},
+  {name:"Amit", marks:78}
+];
+
+let output = "";
+
+for(let i = 0; i < students.length; i++) {
+  output += "<li>" + students[i].name + " - " + students[i].marks + "</li>";
+}
+
+document.getElementById("list").innerHTML = output;
+</script>
+
+</body>
+</html>

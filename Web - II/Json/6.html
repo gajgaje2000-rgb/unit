@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Products with Image</h3>
+
+<div id="data"></div>
+
+<script>
+let products = [
+  {name:"Laptop", image:"laptop.jpg"},
+  {name:"Mobile", image:"mobile.jpg"}
+];
+
+let output = "";
+
+products.forEach(p => {
+  output += "<p>" + p.name + "</p>";
+  output += "<img src='" + p.image + "' width='100'><br><br>";
+});
+
+document.getElementById("data").innerHTML = output;
+</script>
+
+</body>
+</html>

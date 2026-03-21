@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Products</h3>
+
+<table border="1" id="prod">
+<tr><th>Name</th><th>Price</th></tr>
+</table>
+
+<script>
+let products = [
+  {name:"Laptop", price:50000},
+  {name:"Mobile", price:20000}
+];
+
+let table = document.getElementById("prod");
+
+products.forEach(p => {
+  let row = table.insertRow();
+  row.insertCell(0).innerHTML = p.name;
+  row.insertCell(1).innerHTML = p.price;
+});
+</script>
+
+</body>
+</html>

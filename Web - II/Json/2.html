@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Student Marks</h3>
+<ul id="stu"></ul>
+
+<script>
+let students = [
+  {name:"Rahul", marks:85},
+  {name:"Sneha", marks:92}
+];
+
+let data = "";
+students.forEach(s => {
+  data += "<li>" + s.name + " - " + s.marks + "</li>";
+});
+
+document.getElementById("stu").innerHTML = data;
+</script>
+
+</body>
+</html>

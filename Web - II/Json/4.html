@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="show()">Show Data</button>
+
+<ul id="data"></ul>
+
+<script>
+let users = [
+  {name:"Amit"},
+  {name:"Neha"}
+];
+
+function show() {
+  let out = "";
+  users.forEach(u => {
+    out += "<li>" + u.name + "</li>";
+  });
+  document.getElementById("data").innerHTML = out;
+}
+</script>
+
+</body>
+</html>
