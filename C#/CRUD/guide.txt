@@ -1,0 +1,113 @@
+ADO.NET CRUD Console Application - Setup Guide
+
+---
+
+1. DATABASE SETUP
+
+---
+
+• Open SQL Server Management Studio (SSMS)
+
+• Create Database:
+CREATE DATABASE db_1;
+
+• Use Database:
+USE db_1;
+
+• Create Table:
+CREATE TABLE Table_3 (
+Id INT PRIMARY KEY,
+Name VARCHAR(50),
+Age INT
+);
+
+---
+
+2. CONNECTION STRING
+
+---
+
+• Default used in program:
+Server=localhost\SQLEXPRESS;Database=db_1;Trusted_Connection=True;TrustServerCertificate=True;
+
+• If SQL Server name is different:
+
+* Check your server name in SSMS
+* Replace "localhost\SQLEXPRESS" with your server name
+
+Examples:
+Server=DESKTOP-XXXX\SQLEXPRESS
+Server=.\SQLEXPRESS
+
+---
+
+3. REQUIRED CHANGES (IF NEEDED)
+
+---
+
+• Change Database Name:
+Replace "db_1" with your database name
+
+• Change Table Name:
+Replace "Table_3" with your table name
+
+• Match Column Names:
+Ensure table columns match:
+Id, Name, Age
+
+---
+
+4. HOW TO RUN PROGRAM
+
+---
+
+• Open project in Visual Studio
+• Press Ctrl + F5 to run
+
+• Menu Options:
+1 → Insert Student
+2 → Update Student
+3 → Delete Student
+4 → View All Students
+5 → Exit
+
+---
+
+5. IMPORTANT NOTES
+
+---
+
+• Make sure SQL Server is running
+• Ensure Windows Authentication is enabled
+• Id must be UNIQUE (Primary Key)
+• Avoid entering duplicate Id
+
+---
+
+6. COMMON ERRORS & FIXES
+
+---
+
+• Error: "Server not found"
+→ Check SQL Server service is running
+
+• Error: "Login failed"
+→ Check authentication mode
+
+• Error: "Invalid object name Table_3"
+→ Table not created or wrong database selected
+
+---
+
+7. OPTIONAL IMPROVEMENTS
+
+---
+
+• Add Try-Catch for error handling
+• Validate user input
+• Show message if record not found
+• Use stored procedures instead of raw queries
+
+---
+
+## END OF GUIDE
