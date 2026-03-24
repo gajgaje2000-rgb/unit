@@ -1,0 +1,78 @@
+# 📘 GIT 1-PAGE CHEAT SHEET (EXAM)
+
+---
+
+## 🔹 BASIC WORKFLOW
+
+```
+git init
+git status
+git add .
+git commit -m "message"
+git push
+git pull
+```
+
+---
+
+## 🔹 REPOSITORY
+
+* `git init` → create repo
+* `git clone <url>` → copy repo
+
+---
+
+## 🔹 STATUS & HISTORY
+
+* `git status` → check changes
+* `git log --oneline` → commit history
+
+---
+
+## 🔹 ADD & COMMIT
+
+* `git add .` → add all files
+* `git commit -m "msg"` → save changes
+
+---
+
+## 🔹 BRANCHING
+
+* `git branch` → list branches
+* `git branch feature` → create branch
+* `git checkout -b feature` → create + switch
+* `git checkout main` → switch branch
+
+---
+
+## 🔹 MERGING
+
+* `git merge feature` → merge into current branch
+
+---
+
+## 🔹 REMOTE (GITHUB)
+
+* `git remote add origin <url>` → connect repo
+* `git push -u origin main` → first push
+* `git push` → upload changes
+* `git pull` → download + merge
+
+---
+
+## 🔹 UNDO (IMPORTANT)
+
+* `git checkout file.txt` → restore file
+* `git reset HEAD file.txt` → unstage
+* `git reset --hard` ⚠️ → delete all changes
+* `git revert <id>` → safe undo
+
+---
+
+## 🔹 STASH
+
+* `git stash` → save temp
+* `git stash pop` → restore
+
+## 🔹 DIFF
+* `git diff` → Shows difference between changes (before vs after)
